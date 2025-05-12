@@ -14,7 +14,7 @@ class PipelineCdkStack(Stack):
         super().__init__(scope, id, **kwargs)
 
         # Creates a CodeConnections resource called 'CICD_Workshop_Connection'
-        SourceConnection = codeconnections.CfnConnection(self, "CICD_Workshop",
+        SourceConnection = codeconnections.CfnConnection(self, "CDK-CICD",
                 connection_name="CICD_Workshop_Connection",
                 provider_type="GitHub",
         )
